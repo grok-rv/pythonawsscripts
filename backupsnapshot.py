@@ -1,3 +1,4 @@
+#this is a scrip to backuosnapshot
 #!/usr/bin/python
 import boto.ec2
 
@@ -13,7 +14,7 @@ import boto.ec2
 
 ec2_conn = boto.ec2.connect_to_region("us-west-2")
 
-#create a s3 bucket 
+#create a s3 bucket
 
 #bucket = conn.create_bucket('myothernewbucket')
 
@@ -41,4 +42,3 @@ print("back up complete")
     #print snapshot.id
  #   if snapshot.description=="backup script":
   #      snapshot.delete()
-
